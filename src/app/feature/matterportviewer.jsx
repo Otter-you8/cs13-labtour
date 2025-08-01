@@ -1,11 +1,17 @@
-import React from 'react'
+"use client";
+import React, { useEffect, useRef } from "react";
 
-const MatterPortViewer = () => {
-    return (
-        <section className='flex justify-center'>
-            <iframe className='w-full h-170' src="https://my.matterport.com/show/?m=pXuSmseL7cG" allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
-        </section>
-    )
-}
+const MatterPortViewer = ({ modelID, sdkKey }) => {
+  return (
+    <section className="flex justify-center">
+      <iframe
+        className="w-full h-screen"
+        src={`https://my.matterport.com/show/?m=${modelID}&play=1`}
+        allow="fullscreen; vr; xr-spatial-tracking"
+        id="showcase-iframe"
+      ></iframe>
+    </section>
+  );
+};
 
-export default MatterPortViewer
+export default MatterPortViewer;
