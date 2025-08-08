@@ -13,7 +13,7 @@ const Myheader = () => {
         </span>
         <span className="md:hidden">CS-13 Lab</span>
       </Link>
-      <nav className="flex space-x-5 text-base md:space-x-8 md:text-xl">
+      <nav className="flex space-x-3 text-sm md:space-x-8 md:text-xl">
         <Link href="/" className="hover:text-indigo-400 transition">
           Home
         </Link>

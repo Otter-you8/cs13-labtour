@@ -12,7 +12,7 @@ const RoomDescription = ({ title, description, image, reverse }) => {
       transition={{ duration: 1.0 }}
     >
       {reverse ? (
-        <div className="flex flex-col md:flex-row gap-x-15 justify-center">
+        <div className="flex flex-col md:flex-row md:gap-x-15 md:items-center ">
           <div className="md:w-1/2">
             <img
               src={image}
@@ -22,13 +22,13 @@ const RoomDescription = ({ title, description, image, reverse }) => {
           </div>
           <div className="md:w-1/2 text-center space-y-5 my-5">
             <h2 className="text-white font-bold text-4xl">{title}</h2>
-            <p className="text-white text-2xl text-start leading-10">
+            <p className="text-white text-xl text-start whitespace-pre-line">
               {description}
             </p>
           </div>
         </div>
       ) : (
-        <div className="flex flex-col md:flex-row-reverse gap-x-15 justify-center ">
+        <div className="flex flex-col md:flex-row-reverse md:gap-x-15 md:items-center ">
           <div className="md:w-1/2">
             <img
               src={image}
@@ -38,7 +38,7 @@ const RoomDescription = ({ title, description, image, reverse }) => {
           </div>
           <div className="md:w-1/2 text-center space-y-5 my-5">
             <h2 className="text-white font-bold text-4xl">{title}</h2>
-            <p className="text-white text-2xl text-start leading-10">
+            <p className="text-white text-xl text-start whitespace-pre-line">
               {description}
             </p>
           </div>
