@@ -1,9 +1,9 @@
 import React from "react";
 import Myheader from "./components/header";
-import MatterPortViewer from "./feature/matterportviewer";
+import MatterPortViewer from "./feature/Home/matterportviewer";
 import ResearchSection from "./components/ResearchSection";
-import Hero from "./components/Hero";
-import RoomSection from "./components/RoomSection";
+import Hero from "./feature/Home/Hero";
+import RoomSection from "./feature/Room/RoomSection";
 
 const HomePage = () => {
   return (
@@ -14,8 +14,6 @@ const HomePage = () => {
         modelID={"pXuSmseL7cG"}
         sdkKey={"tnwen6f345d1u4r7dp6p87fsd"}
       />
-
-      <RoomSection id="Room" />
 
       <ResearchSection id="Research" />
 

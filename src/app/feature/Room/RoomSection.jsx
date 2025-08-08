@@ -1,5 +1,5 @@
 import React from "react";
-import RoomDescription from "./RoomDescription";
+import RoomDescription from "../../components/RoomDescription";
 
 const RoomSection = () => {
   const rooms = [
@@ -42,7 +42,7 @@ const RoomSection = () => {
       className="bg-gradient-to-br from-gray-800 to-gray-900 py-8"
     >
       <div className="flex justify-center pt-20">
-        <h1 className="text-center text-5xl">システム情報学研究棟：1F</h1>
+        <h1 className="text-center text-5xl">Room</h1>
       </div>
 
       {rooms.map((room, index) => {

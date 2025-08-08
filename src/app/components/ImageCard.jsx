@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 
 const ImageCard = ({ image, title, description, onClick }) => {
   return (
