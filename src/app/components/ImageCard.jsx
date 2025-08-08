@@ -1,9 +1,9 @@
 import React from "react";
 
-const ImageCard = ({ image, title, description, onClick }) => {
+const ImageCard = ({ image, title, summary, description, onClick }) => {
   return (
     <div
-      onClick={() => onClick({ image, title, description })}
+      onClick={() => onClick({ image, title, summary, description })}
       className="cursor-pointer bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-105 transition"
     >
       <img src={image} alt={title} className="w-full h-48 object-cover" />

@@ -1,13 +1,11 @@
 import React from "react";
-import Myheader from "./components/header";
 import MatterPortViewer from "./feature/Home/matterportviewer";
 import ResearchSection from "./components/ResearchSection";
 import Hero from "./feature/Home/Hero";
-import RoomSection from "./feature/Room/RoomSection";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-800 text-white font-sans">
+    <div className="min-h-screen bg-gray-800 text-white">
       <Hero />
 
       <MatterPortViewer

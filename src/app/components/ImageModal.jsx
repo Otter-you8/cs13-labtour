@@ -12,7 +12,7 @@ const ImageModal = ({ isOpen, onClose, data }) => {
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className="bg-white text-black rounded-xl overflow-hidden max-w-3xl w-full"
+            className="bg-white text-black rounded-xl overflow-hidden max-w-3xl w-full relative"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0.9 }}
@@ -23,11 +23,11 @@ const ImageModal = ({ isOpen, onClose, data }) => {
               className="w-full h-64 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-4xl font-bold mb-2">{data.title}</h3>
+              <h3 className="text-2xl font-bold mb-2">{data.summary}</h3>
               <p className="text-gray-700 text-xl">{data.description}</p>
               <button
                 onClick={onClose}
-                className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-500 hover:scale-95"
+                className="absolute top-4 right-4 p-2 bg-gray-200 text-black rounded hover:bg-indigo-500 hover:scale-95"
               >
                 Close
               </button>
