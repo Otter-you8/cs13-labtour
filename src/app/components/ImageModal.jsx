@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
+import { MdOutlineHighlightOff } from "react-icons/md";
 
 const ImageModal = ({ isOpen, onClose, data }) => {
   return (
@@ -12,7 +13,7 @@ const ImageModal = ({ isOpen, onClose, data }) => {
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className="bg-white text-black rounded-xl overflow-hidden max-w-3xl w-full relative"
+            className="bg-white text-black rounded-xl overflow-hidden max-w-3xl w-4/5 relative"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0.9 }}
@@ -23,13 +24,13 @@ const ImageModal = ({ isOpen, onClose, data }) => {
               className="w-full h-64 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-2">{data.summary}</h3>
-              <p className="text-gray-700 text-xl">{data.description}</p>
+              <h3 className="text-base md:text-2xl font-bold mb-2">{data.summary}</h3>
+              <p className="text-gray-700 text-sm md:text-xl">{data.description}</p>
               <button
                 onClick={onClose}
-                className="absolute top-4 right-4 p-2 bg-gray-200 text-black rounded hover:bg-indigo-500 hover:scale-95"
+                className="absolute top-4 right-4 p-2 rounded"
               >
-                Close
+                <MdOutlineHighlightOff className="object-cover hover:scale-95" size={50} color="white" />
               </button>
             </div>
           </motion.div>

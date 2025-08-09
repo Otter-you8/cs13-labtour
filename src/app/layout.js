@@ -1,6 +1,7 @@
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Myheader from "./components/header";
+import Footer from "./components/footer";
 
 const NotoSans = Noto_Sans_JP({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={NotoSans.className}>
         <Myheader />
         <main className="pt-20">{children}</main>
+        <Footer />
       </body>
     </html>
   );

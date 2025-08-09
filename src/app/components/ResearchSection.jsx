@@ -36,7 +36,7 @@ const ResearchSection = () => {
 
   return (
     <section id="Research" className="px-6 py-12">
-      <h2 className="text-5xl font-medium text-center mb-8">Research</h2>
+      <h2 className="text-4xl font-medium text-center mb-8">研究分野</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {imageCards.map((card, index) => (
           <ImageCard key={index} {...card} onClick={handleCardClick} />

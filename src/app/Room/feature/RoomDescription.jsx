@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 const RoomDescription = ({ title, description, image, reverse }) => {
   return (
     <motion.div
-      className="w-full my-32 px-6"
+      className="w-full pb-20 px-6 "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1.0 }}
     >
       {reverse ? (
-        <div className="flex flex-col md:flex-row md:gap-x-15 md:items-center ">
+        <div className="flex flex-col md:flex-row md:gap-x-15 md:items-center">
           <div className="md:w-1/2">
             <img
               src={image}

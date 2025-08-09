@@ -1,5 +1,10 @@
+"use client"
 import React from "react";
-import RoomDescription from "./RoomDescription";
+import { motion } from "framer-motion";
+import { GrGroup } from "react-icons/gr";
+import { PiDesktopTower } from "react-icons/pi";
+import { FaMicroscope } from "react-icons/fa";
+import { MdOutlineScatterPlot } from "react-icons/md";
 
 const RoomSection = () => {
   const rooms = [
@@ -57,12 +62,107 @@ const RoomSection = () => {
   return (
     <section
       id="Room"
-      className="py-15"
+      className="mt-10"
     >
 
-      {rooms.map((room, index) => {
-        return <RoomDescription key={index} {...room} />;
-      })}
+      <motion.div
+        className="w-full pb-20 px-6 "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.0 }}
+      >
+
+        <div className="flex flex-col md:flex-row-reverse md:gap-x-15 md:items-center ">
+          <div className="md:w-1/2">
+            <img
+              src={rooms[0].image}
+              alt={rooms[0].title}
+              className="rounded-3xl w-full h-auto object-cover"
+            />
+          </div>
+          <div className="md:w-1/2 text-center space-y-5 my-5">
+            <h2 className="flex text-white font-bold text-4xl">{rooms[0].title}&nbsp;<GrGroup size={40} /></h2>
+            <p className="text-white text-xl text-start whitespace-pre-line">
+              {rooms[0].description}
+            </p>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        className="w-full pb-20 px-6 "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.0 }}
+      >
+
+        <div className="flex flex-col md:flex-row md:gap-x-15 md:items-center ">
+          <div className="md:w-1/2">
+            <img
+              src={rooms[1].image}
+              alt={rooms[1].title}
+              className="rounded-3xl w-full h-auto object-cover"
+            />
+          </div>
+          <div className="md:w-1/2 text-center space-y-5 my-5">
+            <h2 className="flex text-white font-bold text-4xl">{rooms[1].title}&nbsp;<PiDesktopTower size={40} /></h2>
+            <p className="text-white text-xl text-start whitespace-pre-line">
+              {rooms[1].description}
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="w-full pb-20 px-6 "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.0 }}
+      >
+
+        <div className="flex flex-col md:flex-row-reverse md:gap-x-15 md:items-center ">
+          <div className="md:w-1/2">
+            <img
+              src={rooms[2].image}
+              alt={rooms[2].title}
+              className="rounded-3xl w-full h-auto object-cover"
+            />
+          </div>
+          <div className="md:w-1/2 text-center space-y-5 my-5">
+            <h2 className="flex text-white font-bold text-4xl">{rooms[2].title}&nbsp;<FaMicroscope size={40} /></h2>
+            <p className="text-white text-xl text-start whitespace-pre-line">
+              {rooms[2].description}
+            </p>
+          </div>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="w-full pb-20 px-6 "
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.0 }}
+      >
+
+        <div className="flex flex-col md:flex-row md:gap-x-15 md:items-center ">
+          <div className="md:w-1/2">
+            <img
+              src={rooms[3].image}
+              alt={rooms[3].title}
+              className="rounded-3xl w-full h-auto object-cover"
+            />
+          </div>
+          <div className="md:w-1/2 text-center space-y-5 my-5">
+            <h2 className="flex text-white font-bold text-4xl">{rooms[3].title}&nbsp;<MdOutlineScatterPlot size={40} /></h2>
+            <p className="text-white text-xl text-start whitespace-pre-line">
+              {rooms[3].description}
+            </p>
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
