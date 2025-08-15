@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="jp">
+    <html lang="jp" className="bg-black">
       <body className={NotoSans.className}>
         <Myheader />
         <main className="pt-20">{children}</main>

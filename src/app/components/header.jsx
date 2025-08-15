@@ -11,7 +11,7 @@ const Myheader = () => {
         <span className="hidden md:inline">
           CS-13 System Measurement Labolatory
         </span>
-        <span className="md:hidden text-xl">CS-13 Lab</span>
+        <span className="md:hidden text-xl">CS-13</span>
       </Link>
       <nav className="flex space-x-3 text-sm md:space-x-8 md:text-xl">
         <Link href="/" className="hover:text-indigo-400 transition">
@@ -20,11 +20,11 @@ const Myheader = () => {
         <Link href="/Room" className="hover:text-indigo-400 transition">
           Room
         </Link>
-        <Link href="/#about" className="hover:text-indigo-400 transition">
-          About
+        <Link href="/Research" className="hover:text-indigo-400 transition">
+          Research
         </Link>
         <Link href="#contact" className="hover:text-indigo-400 transition">
-          Contact
+          Student
         </Link>
       </nav>
     </header>
