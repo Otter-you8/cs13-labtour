@@ -5,6 +5,9 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import { MdBiotech } from "react-icons/md";
+import { RiBubbleChartLine } from "react-icons/ri";
+import { BiLogoReact } from "react-icons/bi";
 
 const Research = () => {
     return (
@@ -20,7 +23,7 @@ const Research = () => {
             >
                 <AccordionItem value="item-1">
                     <AccordionTrigger className=" text-white">
-                        <div className='mx-auto'><h1 className='text-3xl'>バイオイメージング</h1>
+                        <div className='mx-auto'><h1 className='flex text-3xl'><MdBiotech size={40} color='green' />バイオイメージング</h1>
                             <h3 className='text-lg'>ーイメージング技術で生体を解明するー</h3></div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -59,7 +62,7 @@ const Research = () => {
                 </AccordionItem>
                 <AccordionItem value="item-2">
                     <AccordionTrigger className=" text-white">
-                        <div className='mx-auto'><h1 className='text-3xl'>散乱イメージング</h1>
+                        <div className='mx-auto'><h1 className='flex text-3xl'><RiBubbleChartLine size={40} color='blue' />散乱イメージング</h1>
                             <h3 className='text-lg'>ー散乱特性を利用したイメージングー</h3></div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col gap-4 text-balance">
@@ -92,7 +95,7 @@ const Research = () => {
                 </AccordionItem>
                 <AccordionItem value="item-3">
                     <AccordionTrigger className=" text-white">
-                        <div className='mx-auto'><h1 className='text-3xl'>量子イメージング</h1>
+                        <div className='mx-auto'><h1 className='flex text-3xl'><BiLogoReact size={40} color='purple' />量子イメージング</h1>
                             <h3 className='text-lg'>ー量子もつれを利用した新たな技術ー</h3></div>
                     </AccordionTrigger>
                     <AccordionContent className="flex flex-col gap-4 text-balance">

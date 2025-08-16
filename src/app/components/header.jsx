@@ -23,8 +23,8 @@ const Myheader = () => {
         <Link href="/Research" className="hover:text-indigo-400 transition">
           Research
         </Link>
-        <Link href="#contact" className="hover:text-indigo-400 transition">
-          Student
+        <Link href="/FAQ" className="hover:text-indigo-400 transition">
+          FAQ
         </Link>
       </nav>
     </header>
