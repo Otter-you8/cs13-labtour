@@ -110,7 +110,7 @@ const Research = () => {
                                 </p>
                             </div>
                             <div className='m-4'>
-                                <img src="/dhm.png" alt="" className='max-h-min md:w-200' />
+                                <img src="/QuantumHolo.png" alt="" className='max-h-min md:w-200' />
                                 <p>※画像はイメージです</p>
                             </div>
                         </section>
@@ -123,7 +123,7 @@ const Research = () => {
                                 </p>
                             </div>
                             <div className='m-4'>
-                                <img src="/dhm.png" alt="" className='max-h-min md:w-200' />
+                                <img src="/QuantumMicro.png" alt="" className='max-h-min md:w-200' />
                                 <p>※画像はイメージです</p>
                             </div>
                         </section>
