@@ -15,8 +15,8 @@ const HomePage = () => {
       <Hero />
 
       <MatterPortViewer
-        modelID={"pXuSmseL7cG"}
-        sdkKey={"tnwen6f345d1u4r7dp6p87fsd"}
+        modelID="pXuSmseL7cG"
+        sdkKey="tnwen6f345d1u4r7dp6p87fsd"
       />
 
       <section id="how" className="px-6 py-12 text-start md:text-center">
@@ -68,7 +68,7 @@ const HomePage = () => {
 
 
 
-      <ResearchSection id="Research" />
+      <ResearchSection />
 
       <section id="aboutLabTour" className="px-6 py-12 text-center">
         <h2 className="flex justify-center text-2xl font-bold pb-4"><FaRegLightbulb size={30} />&nbsp;バーチャルラボツアーとは？</h2>

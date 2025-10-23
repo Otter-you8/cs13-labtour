@@ -6,7 +6,6 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import { FaRegQuestionCircle } from "react-icons/fa";
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 
 const page = () => {

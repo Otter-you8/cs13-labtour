@@ -21,7 +21,7 @@ const Research = () => {
                 className="w-full"
                 defaultValue="item-1"
             >
-                <AccordionItem value="item-1">
+                <AccordionItem value="item-1" className="">
                     <AccordionTrigger className=" text-white">
                         <div className='mx-auto'><h1 className='flex text-3xl'><MdBiotech size={40} color='green' />バイオイメージング</h1>
                             <h3 className='text-lg'>ーイメージング技術で生体を解明するー</h3></div>
@@ -60,7 +60,7 @@ const Research = () => {
                         <h1 className='text-2xl text-center'>and more...</h1>
                     </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-2">
+                <AccordionItem value="item-2" className="">
                     <AccordionTrigger className=" text-white">
                         <div className='mx-auto'><h1 className='flex text-3xl'><RiBubbleChartLine size={40} color='blue' />散乱イメージング</h1>
                             <h3 className='text-lg'>ー散乱特性を利用したイメージングー</h3></div>
@@ -93,7 +93,7 @@ const Research = () => {
                         <h1 className='text-2xl text-center'>and more...</h1>
                     </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-3">
+                <AccordionItem value="item-3" className="">
                     <AccordionTrigger className=" text-white">
                         <div className='mx-auto'><h1 className='flex text-3xl'><BiLogoReact size={40} color='purple' />量子イメージング</h1>
                             <h3 className='text-lg'>ー量子もつれを利用した新たな技術ー</h3></div>

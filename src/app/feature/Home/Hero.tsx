@@ -1,5 +1,4 @@
 "use client";
-import React, { use } from "react";
 import { motion } from "framer-motion";
 
 const Hero = () => {

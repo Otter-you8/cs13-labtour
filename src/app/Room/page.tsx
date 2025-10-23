@@ -7,7 +7,7 @@ const page = () => {
       <div className="flex justify-center pt-10">
         <h1 className="text-center font-black text-5xl">Room</h1>
       </div>
-      <RoomSection id="Room" />
+      <RoomSection />
     </div>
   );
 };
