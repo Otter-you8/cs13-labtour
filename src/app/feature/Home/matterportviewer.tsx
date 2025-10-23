@@ -3,10 +3,10 @@ import React, { useEffect, useRef } from "react";
 
 type modelProps = {
   modelID: string,
-  sdkkey: string
+  sdkKey: string
 }
 
-const MatterPortViewer = ({ modelID, sdkkey }: modelProps) => {
+const MatterPortViewer = ({ modelID, sdkKey }: modelProps) => {
   return (
     <section className="flex justify-center">
       <iframe
