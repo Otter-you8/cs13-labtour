@@ -2,7 +2,18 @@ import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { MdOutlineHighlightOff } from "react-icons/md";
 
-const ImageModal = ({ isOpen, onClose, data }) => {
+type ImageModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+  data: {
+    image?: string;
+    title?: string;
+    summary?: string;
+    description?: string;
+  }
+}
+
+const ImageModal = ({ isOpen, onClose, data }: ImageModalProps) => {
   return (
     <AnimatePresence>
       {isOpen && (

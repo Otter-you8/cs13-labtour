@@ -1,6 +1,21 @@
 import React from "react";
 
-const ImageCard = ({ image, title, summary, description, onClick }) => {
+type cardData = {
+  image: string,
+  title: string,
+  summary: string,
+  description: string
+};
+
+type ImageCardProps = {
+  image: string,
+  title: string,
+  summary: string,
+  description: string,
+  onClick: (data: cardData) => void
+};
+
+const ImageCard = ({ image, title, summary, description, onClick }: ImageCardProps) => {
   return (
     <div
       onClick={() => onClick({ image, title, summary, description })}

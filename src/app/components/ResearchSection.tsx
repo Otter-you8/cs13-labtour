@@ -3,7 +3,14 @@ import React, { useState } from "react";
 import ImageCard from "./ImageCard";
 import ImageModal from "./ImageModal";
 
-const imageCards = [
+type ImageCardData = {
+  image:string,
+  title: string,
+  summary: string,
+  description: string
+}
+
+const imageCards: ImageCardData[] = [
   {
     image: "fluorescentcells.jpg",
     title: "バイオイメージング",
@@ -26,10 +33,10 @@ const imageCards = [
 ];
 
 const ResearchSection = () => {
-  const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedCard, setSelectedCard] = useState<ImageCardData | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleCardClick = (cardData) => {
+  const handleCardClick = (cardData: ImageCardData): void => {
     setSelectedCard(cardData);
     setIsModalOpen(true);
   };

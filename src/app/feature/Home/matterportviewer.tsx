@@ -1,7 +1,12 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
-const MatterPortViewer = ({ modelID, sdkKey }) => {
+type modelProps = {
+  modelID: string,
+  sdkkey: string
+}
+
+const MatterPortViewer = ({ modelID, sdkkey }: modelProps) => {
   return (
     <section className="flex justify-center">
       <iframe

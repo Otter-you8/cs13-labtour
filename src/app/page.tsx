@@ -68,7 +68,7 @@ const HomePage = () => {
 
 
 
-      <ResearchSection id="Research" />
+      <ResearchSection />
 
       <section id="aboutLabTour" className="px-6 py-12 text-center">
         <h2 className="flex justify-center text-2xl font-bold pb-4"><FaRegLightbulb size={30} />&nbsp;バーチャルラボツアーとは？</h2>
